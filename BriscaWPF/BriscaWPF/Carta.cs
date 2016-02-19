@@ -13,13 +13,15 @@ namespace BriscaWPF
         int num;
         int puntos;
         string path;
+        string pathBocaAbajo;
 
-        public Carta(string palo, int num, int puntos, string path)
+        public Carta(string palo, int num, int puntos, string path, string pathBocaAbajo)
         {
             this.palo = palo;
             this.num = num;
             this.puntos = puntos;
             this.path = path;
+            this.pathBocaAbajo = pathBocaAbajo;
         }
 
         public string Palo
@@ -78,6 +80,19 @@ namespace BriscaWPF
             }
         }
 
+        public string PathBocaAbajo
+        {
+            get
+            {
+                return pathBocaAbajo;
+            }
+
+            set
+            {
+                pathBocaAbajo = value;
+                RaisePropertyChanged("PathBocaAbajo");
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void RaisePropertyChanged(string property)

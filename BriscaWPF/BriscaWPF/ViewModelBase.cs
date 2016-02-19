@@ -53,6 +53,10 @@ namespace BriscaWPF
             }
             else
             {
+                if (Jugada.CartaOrdenador == null)
+                {
+                    Jugada.CartaOrdenador = ManoOrdenador.TirarCartaOrdenador();
+                }
                 Jugada.CartaHumano = manoHumano.TirarCartaHumano(v);
             }
             turno = Jugada.EvaluarJugada(turno, palo);

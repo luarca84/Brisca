@@ -40,6 +40,8 @@ namespace BriscaWPF
                 {
                     string path = @".\Images\"+palo + i+".gif";
                     path = Path.GetFullPath(path);
+                    string pathBocaAbajo = @".\Images\0.png";
+                    pathBocaAbajo = Path.GetFullPath(pathBocaAbajo);
                     int puntos = 0;
                     if (i == 1)
                         puntos = 11;
@@ -52,7 +54,7 @@ namespace BriscaWPF
                     if (i == 12)
                         puntos = 4;
 
-                    Carta c = new Carta(palo, i, puntos, path);
+                    Carta c = new Carta(palo, i, puntos, path, pathBocaAbajo);
                     cartas.Add(c);
                 }
             }

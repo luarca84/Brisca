@@ -21,9 +21,9 @@
         </Grid.RowDefinitions>
         <Image Grid.Row="1" Grid.Column="3" Source="{Binding Palo.Path}"></Image>
 
-        <Image Grid.Row="0" Grid.Column="0" Source="{Binding ManoOrdenador.PrimeraCarta.Path}"></Image>
-        <Image Grid.Row="0" Grid.Column="1" Source="{Binding ManoOrdenador.SegundaCarta.Path}"></Image>
-        <Image Grid.Row="0" Grid.Column="2" Source="{Binding ManoOrdenador.TerceraCarta.Path}"></Image>
+        <Image Grid.Row="0" Grid.Column="0" Source="{Binding ManoOrdenador.PrimeraCarta.PathBocaAbajo}"></Image>
+        <Image Grid.Row="0" Grid.Column="1" Source="{Binding ManoOrdenador.SegundaCarta.PathBocaAbajo}"></Image>
+        <Image Grid.Row="0" Grid.Column="2" Source="{Binding ManoOrdenador.TerceraCarta.PathBocaAbajo}"></Image>
 
         <Image Grid.Row="1" Grid.Column="1" Source="{Binding Jugada.CartaOrdenador.Path}"></Image>
         <Image Grid.Row="1" Grid.Column="2" Source="{Binding Jugada.CartaHumano.Path}"></Image>
